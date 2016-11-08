@@ -63,5 +63,42 @@ label.todo-label::after {
     background: #8E9191;
     left: 0;
     top: 100%;
-    
+
+}
+ul#update {
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+}
+ul li {
+    position: relative;
+    padding:  0.75em 0.5em  0.75em 2.5em;
+    background: #eee;
+    font-size: 1.125em;
+    transition: 0.2s;
+    cursor: pointer;
+    list-style: none;
+    color: #f18292;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+ul li:hover {
+    background: #ddd;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.75em 1em 0.75em 1em;
+}
+.close:hover {
+    background-color: #f18292;
+    color: white;
 }
