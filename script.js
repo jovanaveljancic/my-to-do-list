@@ -37,3 +37,18 @@ function getInput(event) {
             ev.target.classList.toggle('checked');
         }
     }, false);
+
+    var em = document.querySelector("#todo-form")
+    var el = document.querySelector('.todo-field');
+    // events:
+    el.addEventListener( 'focus', onInputFocus );
+    el.addEventListener( 'blur', onInputBlur );
+
+    function onInputFocus() {
+        em.classList.add('input-focus');
+    }
+
+    function onInputBlur() {
+        em.classList.remove('input-focus');
+        em.reset();
+    }
